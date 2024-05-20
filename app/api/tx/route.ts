@@ -35,17 +35,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse | Response> {
 }
 
 export async function POST(req: NextRequest): Promise<Response> {
-  try {
-    const response = await getResponse(req);
-    if (response.ok) {
-      const responseData = await response.json();
-      return new Response(JSON.stringify(responseData), { status: 200, headers: { 'Content-Type': 'application/json' } });
-    } else {
-      return new Response('Failed to send transaction', { status: response.status });
-    }
-  } catch (error) {
-    return new Response(error.message, { status: 500 });
-  }
+  return getResponse(req);
 }
-
 export const dynamic = 'force-dynamic';
