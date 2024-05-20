@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'zizzamia.xyz',
     description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    images: [`${NEXT_PUBLIC_URL}/park-1.png`, `https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg`],
   },
   other: {
     ...frameMetadata,
