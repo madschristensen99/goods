@@ -18,9 +18,11 @@ const frameMetadata = getFrameMetadata({
     src: `${NEXT_PUBLIC_URL}/park-3.png`,
     aspectRatio: '1:1',
   },
+  /*
   input: {
-    text: 'View Funding Progress',
+    text: 'Funding input',
   },
+  */
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
